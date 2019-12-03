@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/quiz.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
           backgroundColor: Colors.teal,
-          body: XylophonePage()),
+          body: Quizzler()
+      ),
     );
   }
 }
