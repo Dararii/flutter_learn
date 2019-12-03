@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/quiz.dart';
+import 'package:flutter_learn/destiny_main.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
           backgroundColor: Colors.teal,
-          body: Quizzler()
+          body: StoryPage()
       ),
     );
   }
