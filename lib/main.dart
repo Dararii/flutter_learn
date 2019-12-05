@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/bitcoin/price_screen.dart';
 import 'package:flutter_learn/bmi_calculator.dart';
 import 'package:flutter_learn/bmi_result.dart';
 import 'package:flutter_learn/clima/screens/city_screen.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.blue[300],
         scaffoldBackgroundColor: Color(0xFF0A0E21),
       ),
-      initialRoute: "/clima",
+      initialRoute: "/bitcoin_price",
       routes: {
         "/": (context) =>
             Scaffold(
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
         "/bmi_result": (context) => ResultPage(),
         "/clima": (context) => LoadingScreen(),
         "/clima_location": (context) => LocationScreen(),
-        "/clima_city": (context) => CityScreen()
+        "/clima_city": (context) => CityScreen(),
+        "/bitcoin_price": (context) => PriceScreen(),
       },
       darkTheme: ThemeData.dark(),
     );
